@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+
+# Flask cache and session files
+instance/
+uploads/
+
+# Flask debug logs
+flask.log
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+
+# Python test results
+.coverage
+.cache
