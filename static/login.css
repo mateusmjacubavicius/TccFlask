@@ -1,0 +1,158 @@
+:root {
+    --primeira-cor: #033F52;
+    --segunda-cor: #005366;
+    --terceira-cor: #01788B;
+    --quarta-cor: #01D9E1;
+    --quinta-cor: #FFFFFF;
+    --sexta-cor: #999;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./img/img-tcc-mateus.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--primeira-cor);
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: var(--primeira-cor);
+    color: var(--quinta-cor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: var(--quinta-cor);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--quarta-cor);
+}
+
+.icons .btn-registrar {
+    background-color: var(--quarta-cor);
+    color: var(--primeira-cor);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.icons .btn-registrar:hover {
+    background-color: var(--terceira-cor);
+}
+
+.hamburger {
+    display: none; /* Inicialmente oculto */
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Estilo do container de login */
+.login-container {
+    max-width: 400px;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: var(--quinta-cor);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.input-field {
+    margin-bottom: 1rem;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--sexta-cor);
+    border-radius: 4px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--primeira-cor);
+    color: var(--quinta-cor);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: var(--quarta-cor);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        align-items: flex-start;
+        padding: 1rem; /* Menos padding em telas menores */
+    }
+
+    .nav-links {
+        justify-content: center;
+        margin-top: 1rem; /* Espaçamento entre o logo e os links */
+        flex-wrap: wrap; /* Permite que os links se ajustem */
+    }
+
+    .nav-links li {
+        display: none;
+        margin: 0 5px; /* Menor espaçamento em telas menores */
+    }
+
+    .login-container {
+        padding: 1.5rem; /* Menos padding em telas menores */
+        margin: 3rem auto; /* Menos margem */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%; /* Aumenta a largura do container em telas menores */
+    }
+
+    .btn-login {
+        padding: 0.75rem; /* Aumenta o padding do botão em telas menores */
+    }
+}

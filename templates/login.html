@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Reconhecimento Facial</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
     <script defer src="{{ url_for('static', filename='login.js') }}"></script>
 </head>
 <body>
@@ -22,7 +22,6 @@
         <div class="icons">
             <a href="{{ url_for('register_page') }}" class="btn-registrar">Registrar</a>
         </div>
-        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
     </header>
     <main>
         <div class="login-container">
